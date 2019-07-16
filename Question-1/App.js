@@ -25,7 +25,13 @@ for(let i = 0; i < allWords.length; i++) {
     wordNames.push(thisWord);
   } else {
     uniqueWords[thisWord]++;
-  }
-}
+  };
+};
 // console.log(uniqueWords);
-console.log(wordNames);
+// console.log(wordNames);
+
+// SORT THE WORDS //
+wordNames.sort(function(a, b) {
+  return (uniqueWords[b] - uniqueWords[a]);
+});
+// console.log(wordNames);
