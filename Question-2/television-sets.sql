@@ -22,3 +22,7 @@ SELECT * FROM tvprices;
 -------------------------------------------------
 SELECT * FROM tvprices ORDER BY dateupdated DESC;
 SELECT * FROM tvprices ORDER BY dateupdated ASC;
+
+-- RETURN A UNIQUE LIST OF TV MODELS AND THE MOST RECENT PRICE ASSOCIATED WITH EACH MODEL - BONUS: USE SINGLE QUERY --
+-------------------------------------------------
+SELECT DISTINCT ON (tvmodel) tvmodel, dateupdated, price FROM tvprices ORDER BY tvmodel, dateupdated DESC;
