@@ -1,8 +1,8 @@
--- CREATE TABLE --
+-- CREATE THE TABLE --
 -------------------------------------------------
 CREATE TABLE TVPrices (TVModel VARCHAR(50), DateUpdated TIMESTAMP, Price MONEY);
 
--- SEED DATA --
+-- SEED TABLE WITH DATA --
 -------------------------------------------------
 INSERT INTO tvprices (tvmodel, dateupdated, price) VALUES ('Samsung v100', '2012-02-23 23:00:00', 549.99);
 INSERT INTO tvprices (tvmodel, dateupdated, price) VALUES ('Sony x300', '2012-05-22 00:00:00', 359.99);
@@ -13,3 +13,6 @@ INSERT INTO tvprices (tvmodel, dateupdated, price) VALUES ('Samsung v100', '2013
 INSERT INTO tvprices (tvmodel, dateupdated, price) VALUES ('Sony x300', '2013-05-23 22:00:00', 629.99);
 INSERT INTO tvprices (tvmodel, dateupdated, price) VALUES ('Sony x300', '2013-05-23 22:00:00', 629.99);
 INSERT INTO tvprices (tvmodel, dateupdated, price) VALUES ('Samsung z100', '2013-06-11 22:00:00', 879.99);
+
+-- READ AND LIST THE TABLE --
+SELECT * FROM tvprices;
