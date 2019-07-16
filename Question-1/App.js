@@ -14,14 +14,18 @@ const allWords = words.split(' ');
 // console.log(allWords);
 
 // STORE ALL UNIQUE WORDS AND COUNTS IN AN OBJECT //
+// STORE VALUES OF NEW WORDS IN AN ARRAY FOR REFERENCE //
 const uniqueWords = {};
+const wordNames = [];
 
 for(let i = 0; i < allWords.length; i++) {
   let thisWord = allWords[i];
   if(uniqueWords[thisWord] === undefined) {
     uniqueWords[thisWord] = 1;
+    wordNames.push(thisWord);
   } else {
     uniqueWords[thisWord]++;
   }
 }
-console.log(uniqueWords);
+// console.log(uniqueWords);
+console.log(wordNames);
