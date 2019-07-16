@@ -12,3 +12,16 @@ words = words.replace(/\s+/g, " ");
 // MAKE AN ARRAY OF ALL THE WORDS //
 const allWords = words.split(' ');
 // console.log(allWords);
+
+// STORE ALL UNIQUE WORDS AND COUNTS IN AN OBJECT //
+const uniqueWords = {};
+
+for(let i = 0; i < allWords.length; i++) {
+  let thisWord = allWords[i];
+  if(uniqueWords[thisWord] === undefined) {
+    uniqueWords[thisWord] = 1;
+  } else {
+    uniqueWords[thisWord]++;
+  }
+}
+console.log(uniqueWords);
