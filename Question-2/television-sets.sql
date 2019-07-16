@@ -15,4 +15,10 @@ INSERT INTO tvprices (tvmodel, dateupdated, price) VALUES ('Sony x300', '2013-05
 INSERT INTO tvprices (tvmodel, dateupdated, price) VALUES ('Samsung z100', '2013-06-11 22:00:00', 879.99);
 
 -- READ AND LIST THE TABLE --
+-------------------------------------------------
 SELECT * FROM tvprices;
+
+-- READ AND LIST THE TABLE SORTED BY DATEUPDATED --
+-------------------------------------------------
+SELECT * FROM tvprices ORDER BY dateupdated DESC;
+SELECT * FROM tvprices ORDER BY dateupdated ASC;
