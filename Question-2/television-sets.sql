@@ -1,0 +1,3 @@
+-- CREATE TABLE --
+-------------------------------------------------
+-- CREATE TABLE TVPrices (TVModel VARCHAR(50), DateUpdated TIMESTAMP, Price MONEY);
