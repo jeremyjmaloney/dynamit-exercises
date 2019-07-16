@@ -7,4 +7,8 @@ words = words.replace(/[,.":?0-9]/g, '');
 words = words.replace(/(\r\n|\n|\r)/gm, " ");
 words = words.replace(/-/g, " ");
 words = words.replace(/\s+/g, " ");
-console.log(words);
+// console.log(words);
+
+// MAKE AN ARRAY OF ALL THE WORDS //
+const allWords = words.split(' ');
+// console.log(allWords);
