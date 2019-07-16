@@ -4,12 +4,11 @@ let words = fs.readFileSync('Paragraph.txt').toString().toLowerCase();
 
 // REMOVE SYMBOLS, NUMBERS, LINE BREAKS, DASHES, AND DOUBLE SPACES //
 words = words.replace(/[,.":?0-9]/g, '');
-words = words.replace(/(\r\n|\n|\r)/gm, " ");
-words = words.replace(/-/g, " ");
-words = words.replace(/\s+/g, " ");
+words = words.replace(/[-\n]/g, ' ');
+words = words.replace(/\s+/g, ' ');
 // console.log(words);
 
-// MAKE AN ARRAY OF ALL THE WORDS //
+// MAKE AN ARRAY OF ALL THE SEPARATE WORDS //
 const allWords = words.split(' ');
 // console.log(allWords);
 
@@ -35,3 +34,8 @@ wordNames.sort(function(a, b) {
   return (uniqueWords[b] - uniqueWords[a]);
 });
 // console.log(wordNames);
+
+// PRINT THE REPORT OF UNIQUE WORDS //
+for(let i = 0; i < wordNames.length; i++) {
+  console.log(`${wordNames[i]}: ${uniqueWords[wordNames[i]]}`);
+}
