@@ -15,9 +15,9 @@
 * Task: Prices for television sets
 
 * The table has the following columns:
-	TVModel (VARCHAR)
-	DateUpdated (DATETIME)
-	Price (MONEY)
+	- TVModel (VARCHAR)
+	- DateUpdated (DATETIME)
+	- Price (MONEY)
 
 * Write a set of queries that:
 	- Create the table
