@@ -12,6 +12,30 @@ body {
 header {
   width: 100%;
 }
+.shadow {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    box-shadow: inset 0px 40px 20px -10px rgba(0,0,0,.8);
+    top: 0;
+    left: 0;
+}
+.instagram {
+  display: flex;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 0;
+}
+.white {
+  font-size: 1em;
+  padding: 0%;
+  margin: 0;
+  color: white;
+}
+.instagram-icon {
+  width: 20px;
+}
 .row {
   width: 100%;
   display: flex;
@@ -71,17 +95,17 @@ h1 {
   display: flex;
   flex-wrap: wrap;
 }
-.beef-text {
+.beef-text, .veggie-text {
   width: 50%;
   float: left;
   text-align: left;
 }
-.beef-img {
+.beef-img, .veggie-img {
   display: flex;
   width: 50%;
   float: right;
 }
-.beefdog {
+.beefdog, .vegandog, .veggiedog {
   width: 100%;
 }
 .vegan-text {
@@ -94,9 +118,6 @@ h1 {
   width: 50%;
   float: left;
 }
-.vegandog {
-  width: 100%;
-}
 h3 {
   padding: 20% 10% 0 10%;
   color: #4b4b4f;
@@ -105,6 +126,20 @@ h3 {
 p {
   padding: 5% 15% 0 15%;
   color: gray;
-  font-size: .7em;
+  font-size: .8em;
   font-weight: 100;
+}
+footer {
+  background-color: #edeced;
+  overflow: auto;
+}
+.footer-text {
+  padding: 2% 2% 4% 2%;
+  margin: 0;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
 }
