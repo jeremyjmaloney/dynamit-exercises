@@ -6,11 +6,11 @@
 
 ![alt text](https://github.com/jeremyjmaloney/dynamit-exercises/blob/master/Hotdog-Website/images/hotdog-mockup.png "Provided Mockup Image")
 
-## Question 1
+## Question-1
 
 * Task: Generate a count of the occurrences of each word for the text found in the file Paragraph.txt. Output a list of words and counts in descending count order (word with highest count listed first).
 
-## Question 2
+## Question-2
 
 * Task: Prices for television sets
 
