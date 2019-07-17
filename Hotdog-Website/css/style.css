@@ -20,10 +20,14 @@ header {
 .hdthumb {
   width: 16.66%;
 }
+nav {
+  margin-bottom: 4px;
+}
 .menu {
   margin: 0;
   padding: 2%;
   height: 100%;
+  box-shadow: 0 2px 4px lightgray;
 }
 li {
   display: inline;
@@ -34,8 +38,33 @@ li {
   font-size: 1em;
   font-weight: bold;
   padding: 2%;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
 }
 .menu-link:hover {
   background-color: #245c77;
   color: white;
+}
+.welcome {
+  padding: 10% 12% 15% 12%;
+  background-color: #faf9f9;
+}
+.hdicon {
+  width: 15%;
+  height: auto;
+}
+h1 {
+  font-size: 2em;
+  font-weight: 100;
+  color: #4b4b4f;
+  margin-bottom: 12%;
+}
+.more-btn {
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 2% 4%;
+  background-color: #245c77;
+  border-radius: 5px;
 }
