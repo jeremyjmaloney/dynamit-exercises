@@ -67,7 +67,7 @@ h1 {
   background-color: #245c77;
   border-radius: 5px;
 }
-.beef {
+.hotdogs {
   display: flex;
   flex-wrap: wrap;
 }
@@ -84,8 +84,21 @@ h1 {
 .beefdog {
   width: 100%;
 }
+.vegan-text {
+  width: 50%;
+  float: right;
+  text-align: left;
+}
+.vegan-img {
+  display: flex;
+  width: 50%;
+  float: left;
+}
+.vegandog {
+  width: 100%;
+}
 h3 {
-  padding: 15% 15% 0 10%;
+  padding: 20% 10% 0 10%;
   color: #4b4b4f;
   font-weight: 800;
 }
