@@ -1,0 +1,11 @@
+header {
+  width: 100%;
+}
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.hdthumb {
+  width: 16.66%;
+}
